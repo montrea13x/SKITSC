@@ -1,0 +1,36 @@
+form{
+	background-color: white;
+	width: 50%;
+	margin: 0 auto;
+	border: 2px solid;
+	font: normal 20px Garamond;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+
+pre{
+	font: normal 18px Garamond;
+}
+
+body{
+	background-color: #dddddd;
+}
+
+table{
+	width: 100%;
+	background-color: white;
+}
+
+p{
+	color: red;
+}
+
+password:valid {
+  color: green;
+}
+password:invalid {
+  color: red;
+}
