@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SKITSC</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/login.js"></script>
+	</head>
+	
+	<body>
+		<?php
+			session_start();
+			$_SESSION['courriel'] = null;
+		?>
+		<form class="connection" method="post" id='form'>
+		<h2 text-align="center">Connection</h2>
+		
+		<div><pre>Courriel :		<input type="email" maxlength="60" name="courriel" id="courriel"
+		pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"	required></pre></div>
+		
+		<div><pre>Mot de passe :	<input type="password" maxlength="30" name="password" id="password"
+		pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}" title="Le mot de passe doit avoir au moins 1 chiffres, 1 majuscule et minuscule" required></pre></div>
+		
+		<input type="submit" value="Connecter" onclick="getDataForm()">
+		
+		</form>	
+	</body>
+
+</html>
